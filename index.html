@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wack-a-mole</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <page-lock data-size="small">
+        <h1>Wack-a-mole</h1>
+        <p>Score: <span class="score">0</span></p>
+        <p>Time Left: <span class="timer">10</span></p>
+
+        <grid-container>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+          <grid-item></grid-item>
+        </grid-container>
+
+        <button-container>
+          <button onclick="startWackAMole();" id="start">Start</button>
+          <button onclick="endWackAMole();">Stop</button>
+          <button onclick="resetWackAMole();">Reset</button>
+        </button-container>
+      </page-lock>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
